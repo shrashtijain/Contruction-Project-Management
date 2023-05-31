@@ -1,0 +1,276 @@
+@import './variables.css';
+@import './font.css';
+
+* {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.LoginPageContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+.LoginPageInnerContainer {
+  display: flex;
+  min-height: 100%;
+}
+
+.LoginPageInnerContainer .ImageContianer {
+  width: 25%;
+  background-color: var(--secondaryWhite);
+  min-height: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.LoginPageInnerContainer .ImageContianer .GroupImage {
+  width: 100%;
+  display: block;
+}
+
+.FormContainer {
+  flex-grow: 2;
+  background-color: var(--smokeWhite);
+  min-height: 100%;
+  padding: 3%;
+  background: url('../images/png/form-background-image.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.LoginPageInnerContainer .FormContainer .FormToggle {
+  display: flex;
+  justify-content: center;
+  transform: translateX(46%);
+  max-width: 400px;
+  width: 100%;
+  margin: 0px auto 20px;
+}
+
+.LoginPageInnerContainer .FormContainer .FormToggle .ToggleBtn {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: var(--fs-16);
+  background-color: transparent;
+  color: var(--opacityDarkGray);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.ToggleBtn.active {
+  color: var(--pureWhite);;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.LoginPageInnerContainer .FormContainer .FormContent {
+  position: relative;
+}
+
+.LoginPageInnerContainer .LoginFormContainer,
+.LoginPageInnerContainer .SignupFormContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--pureWhite);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--pureDarkGray);
+  transform:translateX(37%);
+  border-bottom: 19px solid var(--primary);
+  border-top: 19px solid var(--primary);
+}
+
+.LoginPageInnerContainer .LoginFormContainer .LogoContainer .logo,
+.LoginPageInnerContainer .SignupFormContainer .LogoContainer .logo {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .header,
+.LoginPageInnerContainer .SignupFormContainer .header {
+  font-size: var(--fs-32);
+  font-weight: 500;
+  font-weight: bold; 
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .subHeader,
+.LoginPageInnerContainer .SignupFormContainer .subHeader {
+  color: var(--opacityDarkGray);
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .inputContainer,
+.LoginPageInnerContainer .SignupFormContainer .inputContainer {
+  color: var(--blodDarkGray);
+  margin: 10px 0px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .inputContainer .label,
+.LoginPageInnerContainer .SignupFormContainer .inputContainer .label {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .inputContainer .label .labelIcon,
+.LoginPageInnerContainer .SignupFormContainer .inputContainer .label .labelIcon {
+  width: 20px;
+  margin-right: 10px;
+  display: block;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .inputContainer .input,
+.LoginPageInnerContainer .SignupFormContainer .inputContainer .input {
+  display: block;
+  width: calc(100% - 20px);
+  font-size: var(--fs-15);
+  padding: 10px;
+  border: 1px solid var(--border-white);
+  border-radius: 5px;
+  margin-top: 5px;
+  outline: 0px !important;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .OptionsContainer,
+.LoginPageInnerContainer .SignupFormContainer .OptionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .checkbox,
+.LoginPageInnerContainer .SignupFormContainer .checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+  display: block;
+  border: 1px solid var(--border-white);
+}
+
+.LoginPageInnerContainer .LoginFormContainer .checkboxContainer,
+.LoginPageInnerContainer .SignupFormContainer .checkboxContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .checkboxContainer label,
+.LoginPageInnerContainer .SignupFormContainer .checkboxContainer label {
+  display: block;
+  padding: 0px 5px;
+  color: var(--opacityDarkGray);
+}
+
+.LoginPageInnerContainer .LoginFormContainer .ForgotPasswordLink,
+.LoginPageInnerContainer .SignupFormContainer .ForgotPasswordLink {
+  color: var(--tomatoRed);
+  text-decoration: none;
+}
+
+.LoginButton{
+  display: block;
+  width: 100%;
+  margin: 25px auto 0px;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: var(--pureWhite);;
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  max-width: 182px;
+  border: 1px solid var(--primary);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.LoginButton:hover{
+border: 1px solid var(--primary);
+background-color: var(--pureWhite);;
+color: var(--primary);
+
+}
+.SignupFormContainer .SignupFormInnerContainer .SignupButton{
+  display: block;
+  width: 100%;
+  margin: 25px auto 0px;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: var(--pureWhite);;
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  max-width: 182px;
+  border: 1px solid var(--primary);
+  transition: 0.3s all ease-in-out;
+
+}
+
+.SignupFormContainer .SignupFormInnerContainer .SignupButton:hover{
+  border: 1px solid var(--primary);
+  background-color: var(--pureWhite);;
+  color: var(--primary);
+  }
+
+
+@media (max-width:992px){
+  .LoginPageContainer .ImageContianer{
+    display: none;
+  }
+
+  .LoginPageContainer .LoginFormContainer{
+    transform: none;
+  }
+
+  .LoginPageInnerContainer .FormContainer .FormToggle{
+    transform: none;
+  }
+ 
+}
+
+@media (min-width:992px) and (max-width:1024px){
+  .LoginPageInnerContainer .ImageContianer{
+    width: 28%;
+  }
+}
+
+@media (max-width:576px){
+  *{
+    font-size: var(--fs-14);
+  }
+}
+
+
+/* scrollbar design */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}

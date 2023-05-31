@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <title>Project Management</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <div class="LoginPageContainer">
+    <div class="LoginPageInnerContainer">
+      <div class="ImageContianer">
+        <img src="images/png/left-panel-login-image.png" class="GroupImage">
+      </div>
+      <div class="FormContainer">
+        <div class="FormContent">
+          <div class="FormToggle">
+            <button class="ToggleBtn active" data-form="login">Login</button>
+            <button class="ToggleBtn signupFormActive" data-form="signup">Signup</button>
+          </div>
+          <div class="LoginFormContainer">
+            <div class="LoginFormInnerContainer">
+              <div class="LogoContainer">
+                <img src="./images/png/logo-image.png" class="logo">
+              </div>
+              <header class="header">Log in</header>
+              <header class="subHeader">Welcome to <b>Project Management Website</b> Please enter your details</header>
+              <form id="loginForm">
+                <div class="inputContainer">
+                  <label class="label" for="loginEmailAddress">
+                    <img src="./images/png/email-image.png" class="labelIcon">
+                    <span>Email Address*</span>
+                  </label>
+                  <input type="email" class="input" id="loginEmailAddress" placeholder="Enter your Email Address">
+                </div>
+                <div class="inputContainer">
+                  <label class="label" for="loginPassword">
+                    <img src="./images/png/lock-img.png" class="labelIcon">
+                    <span>Password*</span>
+                  </label>
+                  <input type="password" class="input" id="loginPassword" placeholder="Enter your Password">
+                </div>
+                <div class="OptionsContainer">
+                  <div class="checkboxContainer">
+                    <input type="checkbox" id="RememberMe" class="checkbox">
+                    <label for="RememberMe">Remember me</label>
+                  </div>
+                  <a href="#" class="ForgotPasswordLink">Forgot Password?</a>
+                </div>
+                <a type="submit" class="LoginButton" href="./Excutive.html">Login</a>
+              </form>
+            </div>
+          </div>
+          <div class="SignupFormContainer">
+            <div class="SignupFormInnerContainer">
+              <div class="LogoContainer">
+                <img src="./images/png/logo-image.png" class="logo">
+              </div>
+              <header class="header signInHeader">Sign up</header>
+              <header class="subHeader">Create a new account on <b>Project Management Website</b> Please fill in the required information</header>
+              <form id="signupForm">
+                <div class="inputContainer">
+                  <label class="label" for="signupName">
+                    <span>Name <span class="asterickSign">*</span></span>
+                  </label>
+                  <input type="text" class="input" id="signupName" placeholder="Enter your Name">
+                </div>
+                <div class="inputContainer">
+                  <label class="label" for="signupEmailAddress">
+                    <img src="./images/png/email-image.png" class="labelIcon">
+                    <span>Email Address*</span>
+                  </label>
+                  <input type="email" class="input" id="signupEmailAddress" placeholder="Enter your Email Address">
+                </div>
+                <div class="inputContainer">
+                  <label class="label" for="signupPassword">
+                    <img src="./images/png/lock-img.png" class="labelIcon">
+                    <span>Password*</span>
+                  </label>
+                  <input type="password" class="input" id="signupPassword" placeholder="Enter your Password">
+                </div>
+                <div class="inputContainer">
+                  <label class="label" for="signupConfirmPassword">
+                    <img src="./images/png/lock-img.png" class="labelIcon">
+                    <span>Confirm Password*</span>
+                  </label>
+                  <input type="password" class="input" id="signupConfirmPassword" placeholder="Confirm your Password">
+                </div>
+                <button type="submit" class="SignupButton" href="#">Sign up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+<!-- scripts -->
+<script src="./js/custom.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

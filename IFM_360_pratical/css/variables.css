@@ -1,0 +1,23 @@
+:root {
+    /* COLORS */
+    --primary:#2e1f7a;
+    --smokeWhite:#f1f1f1;
+    --secondaryWhite:#e1dfec;
+    --opacityDarkGray:#9aa4ad;
+    --pureWhite:#ffffff;
+    --pureDarkGray:darkgray;
+    --blodDarkGray:#3f3f45;
+    --tomatoRed:#e7483b;
+    --light: #F3F6F9;
+    --dark: #191C24;
+/* border colors */
+    --border-white:#d6d7db;
+    --border-off-white:#ccc;
+
+/* font sizes */
+--fs-16:16px;
+--fs-14:14px;
+--fs-32:32px;
+--fs-15:15px;
+
+    }
